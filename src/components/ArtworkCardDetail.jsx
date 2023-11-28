@@ -34,10 +34,11 @@ export default function ArtworkCardDetail({objectID}) {
 
     return (
         <>
+        <br />
         {error && <Error statusCode={404} />}
         
         { data ?
-            <Card style={{ width: '18rem' }}>
+            <Card>
                 {data.primaryImage && 
                     <Card.Img variant="top" src={data.primaryImage || 'https://via.placeholder.com/375x375.png?text=[+Not+Available+]'} />
                 }
